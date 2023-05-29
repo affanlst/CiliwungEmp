@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/bgchar"
+    android:layout_height="match_parent"
+    tools:context=".CreateNewCharacterFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/CreateButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/buat"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.734" />
+
+        <RadioGroup
+            android:id="@+id/CharOption"
+            android:layout_width="135dp"
+            android:layout_height="172dp"
+            app:layout_constraintBottom_toTopOf="@+id/CreateButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <RadioButton
+                android:id="@+id/Fighter"
+                android:layout_width="109dp"
+                android:layout_height="34dp"
+                android:text="@string/Berserker"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:layout_editor_absoluteY="88dp" />
+
+            <RadioButton
+                android:id="@+id/Marksman"
+                android:layout_width="109dp"
+                android:layout_height="34dp"
+                android:text="@string/archer"
+                android:textColor="@color/white"
+                tools:layout_editor_absoluteX="20dp"
+                tools:layout_editor_absoluteY="80dp" />
+
+            <RadioButton
+                android:id="@+id/Mage"
+                android:layout_width="104dp"
+                android:layout_height="34dp"
+                android:text="@string/Mage"
+                android:textColor="@color/white"
+                tools:layout_editor_absoluteX="23dp"
+                tools:layout_editor_absoluteY="195dp" />
+
+            <RadioButton
+                android:id="@+id/Swordsman"
+                android:layout_width="123dp"
+                android:layout_height="47dp"
+                android:text="@string/swordsman"
+                android:textColor="@color/white"
+                tools:layout_editor_absoluteX="38dp"
+                tools:layout_editor_absoluteY="67dp" />
+        </RadioGroup>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">geming</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="play">play</string>
+    <string name="attack">attack</string>
+    <string name="text_menyerang">kamu menyerang</string>
+    <string name="text_diserang">lawan menyerang</string>
+    <string name="lanjut">Try again</string>
+    <string name="buat">Buat</string>
+    <string name="archer">ARCHER</string>
+    <string name="Mage">MAGE</string>
+    <string name="Berserker">Berserker</string>
+    <string name="swordsman">SWORDSMAN</string>
+    <string name="selamat_anda_menang">Good Job Warrior!!</string>
+    <string name="yah_kalah">YOU DIED!! Your luck is really bad this time</string>
+    <string name="_0">0</string>
+    <string name="you">you</string>
+</resources>

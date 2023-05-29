@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/titleFragment">
+
+    <fragment
+        android:id="@+id/titleFragment"
+        android:name="com.thoriq.geming.TitleFragment"
+        android:label="fragment_title"
+        tools:layout="@layout/fragment_title" >
+        <action
+            android:id="@+id/action_titleFragment_to_createNewCharacterFragment"
+            app:destination="@id/createNewCharacterFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/menuFragment"
+        android:name="com.thoriq.geming.MenuFragment"
+        android:label="fragment_menu"
+        tools:layout="@layout/fragment_menu" >
+        <action
+            android:id="@+id/action_menuFragment_to_gameplayFragment"
+            app:destination="@id/gameplayFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/createNewCharacterFragment"
+        android:name="com.thoriq.geming.CreateNewCharacterFragment"
+        android:label="fragment_create_new_character"
+        tools:layout="@layout/fragment_create_new_character" >
+        <action
+            android:id="@+id/action_createNewCharacterFragment_to_menuFragment"
+            app:destination="@id/menuFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/gameplayFragment"
+        android:name="com.thoriq.geming.GameplayFragment"
+        android:label="fragment_gameplay"
+        tools:layout="@layout/fragment_gameplay" >
+        <action
+            android:id="@+id/action_gameplayFragment_to_loseFragment"
+            app:destination="@id/loseFragment" />
+        <action
+            android:id="@+id/action_gameplayFragment_to_winFragment"
+            app:destination="@id/winFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/winFragment"
+        android:name="com.thoriq.geming.WinFragment"
+        android:label="fragment_win"
+        tools:layout="@layout/fragment_win" >
+        <action
+            android:id="@+id/action_winFragment_to_menuFragment"
+            app:destination="@id/menuFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loseFragment"
+        android:name="com.thoriq.geming.LoseFragment"
+        android:label="fragment_lose"
+        tools:layout="@layout/fragment_lose" >
+        <action
+            android:id="@+id/action_loseFragment_to_createNewCharacterFragment"
+            app:destination="@id/createNewCharacterFragment" />
+    </fragment>
+</navigation>
